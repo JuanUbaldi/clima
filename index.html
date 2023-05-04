@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clima</title>
+  </head>
+  <body>
+    <header class="header">
+      <video id="bgvideo" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="./imgClima/nubes.mp4" type="video/mp4" />
+      </video>
+    </header>
+
+    <section class="weather-content">
+      <h1 class="h1Buscador">Introduzca una ciudad 🌍🌎🌏</h1>
+      <div class="results"></div>
+      <form action="" method="POST" class="get-weather">
+        <input type="text" name="city" id="city" />
+        <input type="submit" name="" id="" value="clima" />
+      </form>
+    </section>
+
+    <iframe
+      width="80%"
+      height="250px"
+      src="https://embed.windy.com/embed2.html?lat=-38.547&lon=-58.753&detailLat=-38.547&detailLon=-58.753&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
+      frameborder="0"
+    ></iframe>
+
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main1.js"></script>
+    <footer id="footer">
+      <h3>copy right reserved</h3>
+    </footer>
+  </body>
+</html>
