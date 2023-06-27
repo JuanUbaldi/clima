@@ -67,15 +67,15 @@ function showWeather(data) {
  <h2>Clima en ${name}, ${country}, a las ${tiempo.toLocaleString(
     DateTime.TIME_SIMPLE
   )}</h2>
- <img src="http://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="">
+ 
  
  <h3>${arr.description}</h2>
  
- <h3>temperatura:</h3><h5>${degree}°C</h5>
- <h3>sensación térmica:</h3><h5>${st}°C</h5>
- <h3>viento:</h3> <h5> ${velocidad} km/h</h5>
- <h3>presión atmosférica: </h3> <h5> ${pressure} hppa</h5>
- <h3>humedad:</h3> <h5> ${humidity} %</h5>
+ <h3>temperatura:   ${degree}°C</h3>
+ <h3>sensación térmica:   ${st}°C</h3>
+ <h3>viento:   ${velocidad} km/h</h3> 
+ <h3>presión atmosférica:    ${pressure} hppa </h3>  
+ <h3>humedad:  ${humidity} %</h3>  
  `;
 
   results.appendChild(content);
@@ -98,4 +98,3 @@ function showError(msg) {
 function limpiar() {
   results.innerHTML = "";
 }
-
